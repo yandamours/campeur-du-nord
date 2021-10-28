@@ -1,0 +1,52 @@
+.main-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-image: linear-gradient(to bottom, white 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.7s ease-in-out;
+
+  &.white {
+    background-position: top;
+    .main-nav-content {
+      color:black;
+    }
+  }
+  
+  .main-nav-content {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease all 0.3s;
+    color:white;
+
+    .nav-logo {
+
+      &.mat-icon-button {
+        height: 52px;
+        width: 52px;
+      }
+
+      i {
+        font-size: 32px;
+      }
+    }
+
+    .main-nav-tabs {
+      a {
+        margin-left: 24px;
+        &.active-link::after {
+          content: "";
+          height: 3px;
+          background: var(--accent-color);
+          position: absolute;
+          width: 32px;
+          bottom: 0;
+          left: calc(50% - 16px);
+        }
+      }
+    }
+  }
+}
