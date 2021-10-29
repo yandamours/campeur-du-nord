@@ -1,6 +1,6 @@
 <div [ngStyle]="{backgroundImage:'url(assets/images/hero-6.jpg)'}" class="hero-image">
   <div class="hero-accueil-content standard-container">
-    <h1>Campeur du Nord</h1>
+    <h1 class="hero-title">Campeur du Nord</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, risus vel sodales pellentesque, ante
       elit dapibus metus, id finibus ante lectus et velit. </p>
     <button mat-flat-button color="accent" routerLink="/notre-campeur">
@@ -30,7 +30,7 @@
 <div class="standard-container section-padding">
   <h4 class="pre-title">Notre équipe</h4>
   <h2>Les humains derrière le projet</h2>
-  <div class="team-members-section">
+  <div class="team-members-section three-col-grid">
     <div *ngFor="let teamMember of teamMembersUrlList; let i = index;"
       [ngStyle]="{'backgroundImage': 'url(\'' + teamMembersUrlList[i] + '\')'}"></div>
   </div>

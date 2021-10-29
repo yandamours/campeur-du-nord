@@ -1,7 +1,7 @@
 <nav #navElt class="main-nav">
   <div class="main-nav-content standard-container">
     <a mat-icon-button routerLink="/accueil" class="nav-logo"><i class="icon-logo"></i></a>
-    <div class="main-nav-tabs">
+    <div class="main-nav-tabs hide-mobile">
       <a routerLinkActive="active-link" mat-button *ngFor="let tab of tabs" [routerLink]="tab.lien">
         {{ tab.label }}
       </a>
