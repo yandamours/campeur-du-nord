@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AccueilComponent implements OnInit {
 
   public teamMembersUrlList = [
-    '../../assets/images/equipe.jpg',
-    '../../assets/images/contact.jpg',
-    '../../assets/images/hero-accueil-2.jpg'
+    'assets/images/equipe.jpg',
+    'assets/images/contact.jpg',
+    'assets/images/hero-accueil-2.jpg'
   ]
 
   constructor() { }
