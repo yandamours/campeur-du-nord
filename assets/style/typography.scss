@@ -8,9 +8,29 @@ html {
   }
 }
 
+
 .mat-h2, .mat-title, .mat-typography h2 {
   margin: var(--title-margin);
 }
+
+.mat-typography {
+  @include for-tablet-landscape-up {
+    .hero-title {
+      font-size: 5rem;
+    }
+    h1 {
+      font-size: 3.4rem;
+    }
+    h2 {
+      font-size: 2.6rem;
+    }
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+  
+}
+
 
 .pre-title {
   color: var(--accent-color);

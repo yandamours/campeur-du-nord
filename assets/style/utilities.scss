@@ -17,3 +17,9 @@
 .title-margin {
   margin: 0, 0, 2rem;
 }
+
+.hide-mobile {
+  @include for-tablet-landscape-down {
+    display: none !important;
+  }
+}
