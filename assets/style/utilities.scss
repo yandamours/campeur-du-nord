@@ -1,0 +1,19 @@
+.section-padding {
+  padding: 24px 0;
+
+  @include for-desktop-up {
+    padding: 48px 0;
+  }
+}
+
+.light-bg {
+  background: var(--light-grey-color);
+}
+
+.light-typo-color {
+  color: var(--light-typo-color);
+}
+
+.title-margin {
+  margin: 0, 0, 2rem;
+}

@@ -1,0 +1,18 @@
+// Font sizes
+
+html {
+  font-size: 16px;
+
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+  }
+}
+
+.mat-h2, .mat-title, .mat-typography h2 {
+  margin: var(--title-margin);
+}
+
+.pre-title {
+  color: var(--accent-color);
+  text-transform:uppercase;
+}
